@@ -2,18 +2,20 @@
 color 0a
 
 :loop
-
+cls
+echo ===MENU===
 set /p input=Input:
 echo Hello, %input%!
-
 echo.
-echo 1 - start notepad
+echo 1 - start notepad ( dont do this ;P )
 echo 2 - clear screen
 echo 3 - exit
+echo.
 
-set /p menu=Input:
-if %menu% == 1: start notepad 
-if %menu% == 2: cls 
-if %menu% == 3: exit
+set /p menu=Select:
+
+if "menu"=="1" start notepad 
+if "menu"=="2" cls 
+if "menu"=="3" exit
 
 goto loop
